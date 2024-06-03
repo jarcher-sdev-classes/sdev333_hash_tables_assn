@@ -2,7 +2,7 @@
 
 # Individual Assignment: Hash Tables 
 
-## Hash Tables Part #1  
+## Overview
 
 For this assignment, you will be building a basic hashtable that uses separate chaining to handle 
 collisions. In separate chaining, each index of the hashtable contains a linked list. When 
