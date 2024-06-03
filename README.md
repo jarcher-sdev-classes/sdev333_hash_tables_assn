@@ -70,32 +70,34 @@ data structure. Instead, you should write the iterator to traverse the table and
 Your job is to write the hash table described above. Your HashTable class must use the ICollection.java 
 interface:
 
+<img src="assn-imgs/assn_9.png" width="550">
 
 ## Unit Tests  
-Here is a group of unit tests that you can use to verify that your hash table is working 
-correctly: HashTableTest.java. The tests assume your class is called HashTable. I will use 
-these tests when grading your work.  
+You have also been provided with a group of unit tests that you can use to verify that your 
+hash table is working correctly. The tests assume your class is called HashTable. Your instructor
+will grade the correctness of your implementation by running these tests.
 
+<img src="assn-imgs/assn_10.png" width="350">
 
 ## Expectation: Working Directly With Linked List Nodes  
-Part of the learning experience on this assignment is using a non-traditional implementation of a 
-Linked List. Our goal is to avoid relying directly upon pre-built classes, like the LinkedList 
-class in the java.util package and to instead work with our own Node objects directly. 
-This includes any Linked List classes that you have built as a student. This has the added effect of 
-avoiding using the methods in a LinkedList class without being aware of their runtime cost. 
-By writing the loops that manipulate Node objects directly inside of your HashTable class, 
-you will be able to write these code segments as efficient as possible.  
+Part of the learning experience on this assignment is to use the Node objects for a linked
+list directly. This is more efficient than using the methods in a LinkedList class, since
+the methods in a LinkedList class are designed to be general and work with any type of data.
 
+When writing the HashTable class you should avoid the LinkedList class altogether. Instead,
+you should write your own Node class and use it to build the linked lists in your hash table.
 Here is an example of how to do this correctly:  
 
-The "wrong" way  
-The "right" way  
+**The "wrong" way**
+
+<img src="assn-imgs/assn_11.png" width="450">
+
+**The "right" way**
+
+<img src="assn-imgs/assn_12.png" width="450">
 
 ## Requirements  
-Any submissions ignoring the following requirements will be forced to resubmit their work.  
-- Your hash table class is required to be a generic class.   
-- Your hash table class must use the ICollection<T> interface. Your class must use the 
-  generic type of the ICollection<T> interface.  
-- Your iterator should be a private inner classes. It should not be visible outside of your HashTable<T> class.  
-- You must use separate chaining to resolve collisions in the hash table.  
+1. Verify that your tests are passing successfully.
+2. Verify that your assignment is passing a linter check using the IntelliJ inspector tool.
+3. Lastly, ensure your code is correctly pushed to your GitHub classroom repository.
     
